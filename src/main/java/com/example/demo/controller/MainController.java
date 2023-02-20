@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.example.demo.entity.Answer;
 import com.example.demo.entity.Post;
@@ -16,6 +17,7 @@ import com.example.demo.mapper.PostMapper;
 import com.example.demo.mapper.UserMapper;
 
 @Controller
+@ComponentScan(basePackageClasses = MainController.class)
 public class MainController {
 	
 	private int logined_userid;
