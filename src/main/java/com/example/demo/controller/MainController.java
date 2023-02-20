@@ -2,7 +2,8 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+//import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;  
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +16,7 @@ import com.example.demo.mapper.AnswerMapper;
 import com.example.demo.mapper.PostMapper;
 import com.example.demo.mapper.UserMapper;
 
-@Controller
+@RestController
 public class MainController {
 	
 	private int logined_userid;
