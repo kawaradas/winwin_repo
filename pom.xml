@@ -86,7 +86,7 @@
 				<configuration>
 					<subscriptionId>eae83b17-6937-4aa2-8a84-59b7ae2db388</subscriptionId>
 					<resourceGroup>spring_test</resourceGroup>
-					<appName>seika-test20230220</appName>
+					<appName>seika-20230220</appName>
 					<pricingTier>P1v2</pricingTier>
 					<region>japaneast</region>
 					<runtime>
@@ -109,5 +109,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
