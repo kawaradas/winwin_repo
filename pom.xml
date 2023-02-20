@@ -86,11 +86,11 @@
 				<configuration>
 					<subscriptionId>eae83b17-6937-4aa2-8a84-59b7ae2db388</subscriptionId>
 					<resourceGroup>spring_test</resourceGroup>
-					<appName>springboot-test20230220</appName>
+					<appName>seika-test20230220</appName>
 					<pricingTier>P1v2</pricingTier>
 					<region>japaneast</region>
 					<runtime>
-						<os>Linux</os>
+						<os>Windows</os>
 						<webContainer>Java SE</webContainer>
 						<javaVersion>Java 11</javaVersion>
 					</runtime>
