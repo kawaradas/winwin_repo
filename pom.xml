@@ -91,7 +91,7 @@
 					<region>japaneast</region>
 					<runtime>
 						<os>Linux</os>
-						<webContainer>Tomcat 10.0</webContainer>
+						<webContainer>Java SE</webContainer>
 						<javaVersion>Java 11</javaVersion>
 					</runtime>
 					<deployment>
