@@ -75,17 +75,33 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        		<groupId>com.microsoft.azure</groupId>
-        		<artifactId>azure-webapp-maven-plugin</artifactId>
-        		<version>1.4.0</version>
-       			<configuration>
-            		<resourceGroup>maven-projects</resourceGroup>
-            		<appName>${project.artifactId}-${maven.build.timestamp}</appName>
-            		<region>westus</region>
-            		<javaVersion>1.8</javaVersion>
-            		<deploymentType>jar</deploymentType>
-            	</configuration>
-        	</plugin>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>azure-webapp-maven-plugin</artifactId>
+				<version>2.3.0</version>
+				<configuration>
+					<subscriptionId>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</subscriptionId>
+					<resourceGroup>spring_test</resourceGroup>
+					<appName>springtest-20230219</appName>
+					<pricingTier>P1v2</pricingTier>
+					<region>japaneast</region>
+					<runtime>
+						<os>Windows</os>
+						<webContainer>Java SE</webContainer>
+						<javaVersion>Java 11</javaVersion>
+					</runtime>
+					<deployment>
+						<resources>
+							<resource>
+								<type>jar</type>
+								<directory>${project.basedir}/target</directory>
+								<includes>
+									<include>*.jar</include>
+								</includes>
+							</resource>
+						</resources>
+					</deployment>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
